@@ -37,6 +37,21 @@
 </head>
 
 <body class="index-page">
+  <div id="preloader">
+  <div class="gear">
+    <div class="gear-inner"></div>
+  </div>
+</div>
+  <script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0"; // Fade-out effect
+    setTimeout(() => {
+      preloader.style.display = "none"; // Remove preloader from the DOM
+    }, 500); // Match this delay with CSS transition time if using a fade-out
+  });
+</script>
+
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
