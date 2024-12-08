@@ -948,6 +948,61 @@ section,
   font-size: 14px;
 }
 
+#certifications
+{
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  padding: 1rem;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
